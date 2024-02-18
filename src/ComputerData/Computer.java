@@ -67,4 +67,14 @@ public boolean getIsNotebook () {
     return isNotebook;
 }
 
+
+    @Override
+    public String toString() {
+        return "Computer: " +
+                "model='" + model + '\'' +
+                ", weight=" + weight +
+                ", monitorDiagonal=" + monitorDiagonal +
+                ", isCompanyComputer=" + isCompanyComputer +
+                ", isNotebook=" + isNotebook;
+    }
 }

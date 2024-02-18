@@ -62,7 +62,7 @@ public class Employee {
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
-                ", computers=" + computers +
+                ", computers=" + getComputers()+
                 '}';
     }
 }
