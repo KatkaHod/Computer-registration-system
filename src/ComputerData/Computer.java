@@ -1,13 +1,15 @@
 package ComputerData;
 
-public class Computers {
+public class Computer {
     private String model;
     private double weight;
     private double monitorDiagonal;
     private boolean isCompanyComputer;
     private boolean isNotebook;
 
-public Computers(String model, double weight, double monitorDiagonal, boolean isCompanyComputer, boolean isNotebook )
+
+    //first constructor
+public Computer(String model, double weight, double monitorDiagonal, boolean isCompanyComputer, boolean isNotebook )
 {
 this.model = model;
 this.weight = weight;
@@ -16,13 +18,21 @@ this.isCompanyComputer = isCompanyComputer;
 this.isNotebook = isNotebook;
 }
 
+
+//second constructor with set default values
+public Computer(String model, double weight) {
+    this(model, weight, 15.7,true,true);
+
+}
+
+
 //Getters and setters - These methods are used to manipulate private attributes of a class.
 public void setModel(String model) {
     this.model = model;
 }
 
 public String getModel() {
-    return this.model;
+    return model;
 }
 
 public void setWeight(double weight) {
@@ -30,7 +40,7 @@ public void setWeight(double weight) {
 }
 
 public double getWeight() {
-    return this.weight;
+    return weight;
 }
 
 public void setMonitorDiagonal(double monitorDiagonal) {
@@ -38,7 +48,7 @@ public void setMonitorDiagonal(double monitorDiagonal) {
 }
 
 public double getMonitorDiagonal() {
-    return this.monitorDiagonal;
+    return monitorDiagonal;
 }
 
 public void setIsCompanyComputer (boolean isCompanyComputer) {
@@ -46,7 +56,7 @@ public void setIsCompanyComputer (boolean isCompanyComputer) {
 }
 
 public boolean getIsCompanyComputer () {
-    return this.isCompanyComputer;
+    return isCompanyComputer;
 }
 
 public void setIsNotebook(boolean isNotebook) {
@@ -54,11 +64,7 @@ public void setIsNotebook(boolean isNotebook) {
 }
 
 public boolean getIsNotebook () {
-    return this.isNotebook;
+    return isNotebook;
 }
-
-
-
-
 
 }
